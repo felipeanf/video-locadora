@@ -1,5 +1,3 @@
-import java.util.Enumeration;
-
 public class TextStatement extends Statement {
 
     public String getResultHeader(Customer aCustomer){        
