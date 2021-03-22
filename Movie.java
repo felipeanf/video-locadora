@@ -4,8 +4,8 @@ public class Movie {
     public static final int  REGULAR = 0;
     public static final int  NEW_RELEASE = 1;
   
-    private String _title;
-    private Price _price;
+    public String _title;
+    public Price _price;
   
     public Movie(String title, int priceCode) {
         _title = title;
