@@ -11,7 +11,7 @@ public class UntityTests{
 
     int days_rented = 5;
 
-    @Test // teste number 1;
+    @Test // test number 1;
     public void testRegularPrice(){
         RegularPrice price = new RegularPrice();
         double total_charge = price.getCharge(days_rented);
@@ -19,7 +19,7 @@ public class UntityTests{
         assertEquals(0, price_code);
         assertEquals(6.5, total_charge);
     }
-    @Test // teste number 2;
+    @Test // test number 2;
     public void testGetChilddrensPrice(){
         ChildrensPrice price = new ChildrensPrice();
         double total_charge = price.getCharge(days_rented);
@@ -27,7 +27,7 @@ public class UntityTests{
         assertEquals(2, price_code);
         assertEquals(4.5, total_charge);
     }
-    @Test // teste number 3;
+    @Test // test number 3;
     public void testNewReleasePrice(){
         NewReleasePrice price = new NewReleasePrice();
         double total_charge = price.getCharge(days_rented);
@@ -38,7 +38,7 @@ public class UntityTests{
         assertEquals(2, frequent_renter_points);
     }
 
-    @Test // teste number 4;
+    @Test // test number 4;
     public void testSetPriceCode(){
         Movie movie_regular = new Movie("Titanic", 0);
         assertThat(movie_regular._price, is(instanceOf(RegularPrice.class)));
